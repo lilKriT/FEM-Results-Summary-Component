@@ -1,7 +1,12 @@
 import { useState } from "react";
+import Summary from "./Summary";
 
 function App() {
-  return <div className="App bg-emerald-500">Installed Tailwind.</div>;
+  return (
+    <>
+      <Summary />
+    </>
+  );
 }
 
 export default App;

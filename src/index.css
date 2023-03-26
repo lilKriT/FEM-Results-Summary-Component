@@ -11,3 +11,13 @@
     @apply text-lg;
   }
 }
+
+@layer utilities {
+  .bgGradient {
+    @apply bg-gradient-to-b from-lightSlateBlue to-lightRoyalBlue;
+  }
+
+  .circleGradient {
+    @apply bg-gradient-to-b from-violetBlue to-persianBlue;
+  }
+}
