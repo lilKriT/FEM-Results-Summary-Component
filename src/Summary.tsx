@@ -14,13 +14,18 @@ const Summary = () => {
           tests.
         </div>
         {/* Right Column */}
-        <div className="w-1/2 bg-white">
+        <div className="w-1/2 bg-white p-4">
           <h2>Summary</h2>
           <div> Reaction 80 / 100</div>
           <div>Memory 92 / 100</div>
           <div>Verbal 61 / 100</div>
           <div>Visual 72 / 100</div>
-          <a href="#">Continue</a>
+          <a
+            href="#"
+            className="bg-darkGrayBlue text-white flex justify-center items-center rounded-full p-2"
+          >
+            Continue
+          </a>
         </div>
       </div>
     </section>
