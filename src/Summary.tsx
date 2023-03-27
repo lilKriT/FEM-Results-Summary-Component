@@ -1,4 +1,8 @@
 import React from "react";
+import Reaction from "./assets/images/icon-reaction.svg";
+import Memory from "./assets/images/icon-memory.svg";
+import Verbal from "./assets/images/icon-verbal.svg";
+import Visual from "./assets/images/icon-visual.svg";
 
 const Summary = () => {
   return (
@@ -10,16 +14,26 @@ const Summary = () => {
           <div className="circleGradient rounded-full">
             <span className="text-3xl">76</span> of 100
           </div>
-          Great You scored higher than 65% of the people who have taken these
-          tests.
+          <p className="text-center">
+            Great You scored higher than 65% of the people who have taken these
+            tests.
+          </p>
         </div>
         {/* Right Column */}
         <div className="w-1/2 bg-white p-4">
-          <h2>Summary</h2>
-          <div> Reaction 80 / 100</div>
-          <div>Memory 92 / 100</div>
-          <div>Verbal 61 / 100</div>
-          <div>Visual 72 / 100</div>
+          <h2 className="text-xl font-bold text-darkGrayBlue">Summary</h2>
+          <div className="flex gap-2">
+            <img src={Reaction} alt="" /> Reaction 80 / 100
+          </div>
+          <div className="flex gap-2">
+            <img src={Memory} alt="" /> Memory 92 / 100
+          </div>
+          <div className="flex gap-2">
+            <img src={Verbal} alt="" /> Verbal 61 / 100
+          </div>
+          <div className="flex gap-2">
+            <img src={Visual} alt="" /> Visual 72 / 100
+          </div>
           <a
             href="#"
             className="bg-darkGrayBlue text-white flex justify-center items-center rounded-full p-2"
