@@ -5,8 +5,8 @@ const Summary = () => {
     <section className="bg-paleBlue h-screen w-screen flex justify-center items-center ">
       <div className="flex">
         {/* Left Column */}
-        <div className="w-1/2 bgGradient rounded-lg p-4">
-          <h2>Your Result</h2>
+        <div className="w-1/2 bgGradient rounded-lg p-4 flex flex-col items-center gap-4">
+          <h2 className="text-xl text-lightLavender">Your Result</h2>
           <div className="circleGradient rounded-full">
             <span className="text-3xl">76</span> of 100
           </div>
