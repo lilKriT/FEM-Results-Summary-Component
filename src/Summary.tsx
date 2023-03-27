@@ -4,7 +4,11 @@ import Memory from "./assets/images/icon-memory.svg";
 import Verbal from "./assets/images/icon-verbal.svg";
 import Visual from "./assets/images/icon-visual.svg";
 
+import data from "./data.json";
+
 const Summary = () => {
+  console.log(data);
+
   return (
     <section className="bg-paleBlue h-screen w-screen flex justify-center items-center ">
       <div className="flex">
@@ -22,6 +26,9 @@ const Summary = () => {
         {/* Right Column */}
         <div className="w-1/2 bg-white p-4">
           <h2 className="text-xl font-bold text-darkGrayBlue">Summary</h2>
+          {data.map(() => (
+            <div>123</div>
+          ))}
           <div className="flex gap-2">
             <img src={Reaction} alt="" /> Reaction 80 / 100
           </div>
