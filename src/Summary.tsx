@@ -5,6 +5,7 @@ import Verbal from "./assets/images/icon-verbal.svg";
 import Visual from "./assets/images/icon-visual.svg";
 
 import data from "./data.json";
+import ResultComponent from "./ResultComponent";
 
 const Summary = () => {
   console.log(data);
@@ -27,13 +28,7 @@ const Summary = () => {
         <div className="w-1/2 bg-white p-4">
           <h2 className="text-xl font-bold text-darkGrayBlue">Summary</h2>
           {data.map((el) => {
-            const url = el.icon;
-            return (
-              <div className="flex gap-2">
-                <img src={url} alt="" />
-                {el.category} {el.score} / 100
-              </div>
-            );
+            return <ResultComponent element={el} />;
           })}
           <div className="flex gap-2">
             <img src={Reaction} alt="" /> Reaction 80 / 100
