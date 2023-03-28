@@ -8,7 +8,7 @@ import data from "./data.json";
 import ResultComponent from "./ResultComponent";
 
 const Summary = () => {
-  console.log(data);
+  // console.log(data);
 
   return (
     <section className="bg-paleBlue h-screen w-screen flex justify-center items-center ">
@@ -27,8 +27,8 @@ const Summary = () => {
         {/* Right Column */}
         <div className="w-1/2 bg-white p-4">
           <h2 className="text-xl font-bold text-darkGrayBlue">Summary</h2>
-          {data.map((el) => {
-            return <ResultComponent element={el} />;
+          {data.map((el, idx) => {
+            return <ResultComponent element={el} key={idx} />;
           })}
           <div className="flex gap-2">
             <img src={Reaction} alt="" /> Reaction 80 / 100
