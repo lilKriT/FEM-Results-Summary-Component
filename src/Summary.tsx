@@ -26,9 +26,15 @@ const Summary = () => {
         {/* Right Column */}
         <div className="w-1/2 bg-white p-4">
           <h2 className="text-xl font-bold text-darkGrayBlue">Summary</h2>
-          {data.map(() => (
-            <div>123</div>
-          ))}
+          {data.map((el) => {
+            const url = el.icon;
+            return (
+              <div className="flex gap-2">
+                <img src={url} alt="" />
+                {el.category} {el.score} / 100
+              </div>
+            );
+          })}
           <div className="flex gap-2">
             <img src={Reaction} alt="" /> Reaction 80 / 100
           </div>
