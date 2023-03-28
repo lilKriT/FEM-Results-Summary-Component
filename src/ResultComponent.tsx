@@ -5,21 +5,9 @@ interface IResultComponent {
 }
 
 const ResultComponent = ({ element }: IResultComponent) => {
-  const [url, seturl] = useState("");
-
-  const getImage = async () => {
-    const img = await import(element.icon);
-    // const res = await img.blob();
-    console.log(element.icon);
-  };
-
-  useEffect(() => {
-    getImage();
-  }, []);
-
   return (
     <div className="flex gap-2">
-      <img src={""} alt="" /> {url}
+      <img src={element.icon} alt="" />
       {element.category} {element.score} / 100
     </div>
   );

@@ -14,10 +14,10 @@ const Summary = () => {
     <section className="bg-paleBlue h-screen w-screen flex justify-center items-center ">
       <div className="flex">
         {/* Left Column */}
-        <div className="w-1/2 bgGradient rounded-lg p-4 flex flex-col items-center gap-4">
+        <div className="w-1/2 bgGradient rounded-lg p-8 flex flex-col items-center gap-4">
           <h2 className="text-xl text-lightLavender">Your Result</h2>
-          <div className="circleGradient rounded-full">
-            <span className="text-3xl">76</span> of 100
+          <div className="circleGradient rounded-full text-lightLavender flex flex-col">
+            <span className="text-5xl text-paleBlue">76</span> of 100
           </div>
           <p className="text-center">
             Great You scored higher than 65% of the people who have taken these
@@ -25,7 +25,7 @@ const Summary = () => {
           </p>
         </div>
         {/* Right Column */}
-        <div className="w-1/2 bg-white p-4">
+        <div className="w-1/2 bg-white p-8">
           <h2 className="text-xl font-bold text-darkGrayBlue">Summary</h2>
           {data.map((el, idx) => {
             return <ResultComponent element={el} key={idx} />;
