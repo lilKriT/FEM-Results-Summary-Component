@@ -16,8 +16,8 @@ const Summary = () => {
         {/* Left Column */}
         <div className="w-1/2 bgGradient rounded-lg p-8 flex flex-col items-center gap-4">
           <h2 className="text-xl text-lightLavender">Your Result</h2>
-          <div className="circleGradient aspect-square rounded-full text-lightLavender flex flex-col justify-center items-center">
-            <span className="text-5xl text-paleBlue">76</span> of 100
+          <div className="circleGradient w-44 aspect-square rounded-full text-lightLavender flex flex-col justify-center items-center">
+            <span className="text-7xl text-paleBlue font-bold">76</span> of 100
           </div>
           <p className="text-2xl text-paleBlue">Great</p>
           <p className="text-center text-lightLavender">
@@ -31,13 +31,13 @@ const Summary = () => {
           <div className="flex gap-2 bg-lightRed/20 text-lightRed p-2 rounded-xl">
             <img src={Reaction} alt="" /> Reaction 80 / 100
           </div>
-          <div className="flex gap-2 bg-lightRed/20 text-lightRed p-2 rounded-xl">
+          <div className="flex gap-2 bg-orangeYellow/20 text-orangeYellow p-2 rounded-xl">
             <img src={Memory} alt="" /> Memory 92 / 100
           </div>
-          <div className="flex gap-2 bg-lightRed/20 text-lightRed p-2 rounded-xl">
+          <div className="flex gap-2 bg-greenTeal/20 text-greenTeal p-2 rounded-xl">
             <img src={Verbal} alt="" /> Verbal 61 / 100
           </div>
-          <div className="flex gap-2 bg-lightRed/20 text-lightRed p-2 rounded-xl">
+          <div className="flex gap-2 bg-cobaltBlue/20 text-cobaltBlue p-2 rounded-xl">
             <img src={Visual} alt="" /> Visual 72 / 100
           </div>
           <a
