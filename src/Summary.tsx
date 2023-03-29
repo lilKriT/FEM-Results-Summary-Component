@@ -12,7 +12,7 @@ const Summary = () => {
 
   return (
     <section className="bg-paleBlue h-screen w-screen flex justify-center items-center ">
-      <div className="flex">
+      <div className="flex max-w-3xl">
         {/* Left Column */}
         <div className="w-1/2 bgGradient rounded-lg p-8 flex flex-col items-center gap-4">
           <h2 className="text-xl text-lightLavender">Your Result</h2>
@@ -28,17 +28,29 @@ const Summary = () => {
         <div className="w-1/2 bg-white p-8 flex flex-col gap-2">
           <h2 className="text-xl font-bold text-darkGrayBlue mb-2">Summary</h2>
 
-          <div className="flex gap-2 bg-lightRed/20 text-lightRed p-2 rounded-xl">
-            <img src={Reaction} alt="" /> Reaction 80 / 100
+          <div className="flex gap-2 bg-lightRed/20 text-lightRed p-2 rounded-xl justify-between items-center">
+            <span className="flex flex-row">
+              <img src={Reaction} alt="" /> <p>Reaction</p>
+            </span>{" "}
+            <span className="flex justify-center items-center">80 / 100</span>
           </div>
           <div className="flex gap-2 bg-orangeYellow/20 text-orangeYellow p-2 rounded-xl">
-            <img src={Memory} alt="" /> Memory 92 / 100
+            <span>
+              <img src={Memory} alt="" /> <p>Memory</p>
+            </span>{" "}
+            92 / 100
           </div>
           <div className="flex gap-2 bg-greenTeal/20 text-greenTeal p-2 rounded-xl">
-            <img src={Verbal} alt="" /> Verbal 61 / 100
+            <span>
+              <img src={Verbal} alt="" /> <p>Verbal</p>
+            </span>{" "}
+            61 / 100
           </div>
           <div className="flex gap-2 bg-cobaltBlue/20 text-cobaltBlue p-2 rounded-xl">
-            <img src={Visual} alt="" /> Visual 72 / 100
+            <span>
+              <img src={Visual} alt="" /> <p>Visual</p>
+            </span>{" "}
+            72 / 100
           </div>
           <a
             href="#"
