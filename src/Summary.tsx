@@ -28,7 +28,7 @@ const Summary = () => {
         <div className="w-1/2 bg-white p-8">
           <h2 className="text-xl font-bold text-darkGrayBlue">Summary</h2>
 
-          <div className="flex gap-2">
+          <div className="flex gap-2 bg-lightRed/20 text-lightRed p-2 rounded-xl">
             <img src={Reaction} alt="" /> Reaction 80 / 100
           </div>
           <div className="flex gap-2">
