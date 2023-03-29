@@ -25,24 +25,24 @@ const Summary = () => {
           </p>
         </div>
         {/* Right Column */}
-        <div className="w-1/2 bg-white p-8">
-          <h2 className="text-xl font-bold text-darkGrayBlue">Summary</h2>
+        <div className="w-1/2 bg-white p-8 flex flex-col gap-2">
+          <h2 className="text-xl font-bold text-darkGrayBlue mb-2">Summary</h2>
 
           <div className="flex gap-2 bg-lightRed/20 text-lightRed p-2 rounded-xl">
             <img src={Reaction} alt="" /> Reaction 80 / 100
           </div>
-          <div className="flex gap-2">
+          <div className="flex gap-2 bg-lightRed/20 text-lightRed p-2 rounded-xl">
             <img src={Memory} alt="" /> Memory 92 / 100
           </div>
-          <div className="flex gap-2">
+          <div className="flex gap-2 bg-lightRed/20 text-lightRed p-2 rounded-xl">
             <img src={Verbal} alt="" /> Verbal 61 / 100
           </div>
-          <div className="flex gap-2">
+          <div className="flex gap-2 bg-lightRed/20 text-lightRed p-2 rounded-xl">
             <img src={Visual} alt="" /> Visual 72 / 100
           </div>
           <a
             href="#"
-            className="bg-darkGrayBlue text-white flex justify-center items-center rounded-full p-2"
+            className="bg-darkGrayBlue text-white flex justify-center items-center rounded-full p-2 mt-2"
           >
             Continue
           </a>
