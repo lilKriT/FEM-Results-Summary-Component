@@ -16,20 +16,18 @@ const Summary = () => {
         {/* Left Column */}
         <div className="w-1/2 bgGradient rounded-lg p-8 flex flex-col items-center gap-4">
           <h2 className="text-xl text-lightLavender">Your Result</h2>
-          <div className="circleGradient rounded-full text-lightLavender flex flex-col">
+          <div className="circleGradient aspect-square rounded-full text-lightLavender flex flex-col justify-center items-center">
             <span className="text-5xl text-paleBlue">76</span> of 100
           </div>
-          <p className="text-center">
-            Great You scored higher than 65% of the people who have taken these
-            tests.
+          <p className="text-2xl text-paleBlue">Great</p>
+          <p className="text-center text-lightLavender">
+            You scored higher than 65% of the people who have taken these tests.
           </p>
         </div>
         {/* Right Column */}
         <div className="w-1/2 bg-white p-8">
           <h2 className="text-xl font-bold text-darkGrayBlue">Summary</h2>
-          {data.map((el, idx) => {
-            return <ResultComponent element={el} key={idx} />;
-          })}
+
           <div className="flex gap-2">
             <img src={Reaction} alt="" /> Reaction 80 / 100
           </div>
