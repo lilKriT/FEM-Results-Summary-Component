@@ -35,21 +35,21 @@ const Summary = () => {
             <span className="flex justify-center items-center">80 / 100</span>
           </div>
 
-          <div className="flex gap-2 bg-orangeYellow/20 text-orangeYellow p-2 rounded-xl">
+          <div className="flex gap-2 bg-orangeYellow/20 text-orangeYellow p-2 rounded-xl  justify-between items-center">
             <span className="flex flex-row gap-2">
               <img src={Memory} alt="" /> <p>Memory</p>
             </span>{" "}
             92 / 100
           </div>
 
-          <div className="flex gap-2 bg-greenTeal/20 text-greenTeal p-2 rounded-xl">
+          <div className="flex gap-2 bg-greenTeal/20 text-greenTeal p-2 rounded-xl  justify-between items-center">
             <span className="flex flex-row gap-2">
               <img src={Verbal} alt="" /> <p>Verbal</p>
             </span>{" "}
             61 / 100
           </div>
 
-          <div className="flex gap-2 bg-cobaltBlue/20 text-cobaltBlue p-2 rounded-xl">
+          <div className="flex gap-2 bg-cobaltBlue/20 text-cobaltBlue p-2 rounded-xl  justify-between items-center">
             <span className="flex flex-row gap-2">
               <img src={Visual} alt="" /> <p>Visual</p>
             </span>{" "}
