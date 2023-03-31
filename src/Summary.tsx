@@ -12,9 +12,9 @@ const Summary = () => {
 
   return (
     <section className="bg-paleBlue h-screen w-screen flex justify-center items-center ">
-      <div className="flex max-w-3xl">
+      <div className="flex max-w-3xl mx-6 bg-white overflow-hidden rounded-2xl">
         {/* Left Column */}
-        <div className="w-1/2 bgGradient rounded-lg p-8 flex flex-col items-center gap-4">
+        <div className="w-1/2 bgGradient rounded-2xl p-8 flex flex-col items-center gap-4">
           <h2 className="text-xl text-lightLavender">Your Result</h2>
           <div className="circleGradient w-44 aspect-square rounded-full text-lightLavender flex flex-col justify-center items-center">
             <span className="text-7xl text-paleBlue font-bold">76</span> of 100
@@ -25,7 +25,7 @@ const Summary = () => {
           </p>
         </div>
         {/* Right Column */}
-        <div className="w-1/2 bg-white p-8 flex flex-col gap-2">
+        <div className="w-1/2 bg-white p-8 flex flex-col gap-2 ">
           <h2 className="text-xl font-bold text-darkGrayBlue mb-2">Summary</h2>
 
           <div className="flex gap-2 bg-lightRed/20 text-lightRed p-2 rounded-xl justify-between items-center">
