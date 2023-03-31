@@ -11,10 +11,10 @@ const Summary = () => {
   // console.log(data);
 
   return (
-    <section className="bg-paleBlue h-screen w-screen flex justify-center items-center ">
-      <div className="flex flex-col tablet:flex-row max-w-3xl tablet:mx-6 bg-white overflow-hidden rounded-2xl">
+    <section className="bg-paleBlue min-h-screen w-screen flex justify-center items-center ">
+      <div className="flex flex-col tablet:flex-row max-w-3xl tablet:mx-6 bg-white overflow-hidden tablet:rounded-2xl">
         {/* Left Column */}
-        <div className="tablet:w-1/2 bgGradient rounded-2xl p-8 flex flex-col items-center gap-4">
+        <div className="tablet:w-1/2 bgGradient rounded-b-2xl tablet:rounded-2xl p-8 flex flex-col items-center gap-4">
           <h2 className="text-xl text-lightLavender">Your Result</h2>
           <div className="circleGradient w-44 aspect-square rounded-full text-lightLavender flex flex-col justify-center items-center">
             <span className="text-7xl text-paleBlue font-bold">76</span> of 100
