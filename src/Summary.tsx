@@ -11,8 +11,8 @@ const Summary = () => {
   // console.log(data);
 
   return (
-    <section className="bg-paleBlue min-h-screen w-screen flex justify-center items-center ">
-      <div className="flex flex-col tablet:flex-row max-w-3xl tablet:mx-6 bg-white overflow-hidden tablet:rounded-2xl">
+    <section className="bg-paleBlue min-h-screen w-screen flex justify-center tablet:items-center ">
+      <div className="flex flex-col w-full tablet:flex-row max-w-3xl tablet:m-6 bg-white overflow-hidden tablet:rounded-2xl">
         {/* Left Column */}
         <div className="tablet:w-1/2 bgGradient rounded-b-2xl tablet:rounded-2xl p-8 flex flex-col items-center gap-4">
           <h2 className="text-xl text-lightLavender">Your Result</h2>
@@ -33,7 +33,7 @@ const Summary = () => {
               <img src={Reaction} alt="" /> <p>Reaction</p>
             </span>{" "}
             <span className="flex justify-center items-center text-darkGrayBlue">
-              80 / 100
+              <span className="font-bold">80</span>&nbsp;/ 100
             </span>
           </div>
 
@@ -42,7 +42,7 @@ const Summary = () => {
               <img src={Memory} alt="" /> <p>Memory</p>
             </span>{" "}
             <span className="flex justify-center items-center text-darkGrayBlue">
-              92 / 100
+              <span className="font-bold">92</span>&nbsp;/ 100
             </span>
           </div>
 
@@ -51,7 +51,7 @@ const Summary = () => {
               <img src={Verbal} alt="" /> <p>Verbal</p>
             </span>{" "}
             <span className="flex justify-center items-center text-darkGrayBlue">
-              61 / 100
+              <span className="font-bold">61</span>&nbsp;/ 100
             </span>
           </div>
 
@@ -60,7 +60,7 @@ const Summary = () => {
               <img src={Visual} alt="" /> <p>Visual</p>
             </span>{" "}
             <span className="flex justify-center items-center text-darkGrayBlue">
-              72 / 100
+              <span className="font-bold">72</span>&nbsp;/ 100
             </span>
           </div>
           <a
