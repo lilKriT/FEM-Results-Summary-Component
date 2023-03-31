@@ -11,7 +11,7 @@ const Summary = () => {
   // console.log(data);
 
   return (
-    <section className="bg-paleBlue min-h-screen w-screen flex justify-center tablet:items-center ">
+    <section className="bg-paleBlue min-h-screen w-full flex justify-center tablet:items-center ">
       <div className="flex flex-col w-full tablet:flex-row max-w-3xl tablet:m-6 bg-white overflow-hidden tablet:rounded-2xl">
         {/* Left Column */}
         <div className="tablet:w-1/2 bgGradient rounded-b-2xl tablet:rounded-2xl p-8 flex flex-col items-center gap-4">
