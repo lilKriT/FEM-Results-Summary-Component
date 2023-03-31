@@ -65,7 +65,7 @@ const Summary = () => {
           </div>
           <a
             href="#"
-            className="bg-darkGrayBlue text-white flex justify-center items-center rounded-full p-2 mt-2"
+            className="bg-darkGrayBlue text-white flex justify-center items-center rounded-full p-2 mt-2 hover:bgGradient duration-300 ease-in-out"
           >
             Continue
           </a>
